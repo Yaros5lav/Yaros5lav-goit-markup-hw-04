@@ -19,6 +19,7 @@
 	--header-bottom: #ECECEC;
 	--button-hover: #188CE8 ;
 	--projects-border: #EEEEEE;
+	--clients-logo: #AFB1B8;
 }
 
 body {
@@ -226,7 +227,14 @@ header {
 }
 
 /* section 2 =reasons */
-
+.reasons-div {
+	width: 270px;
+	height: 120px;
+	background-color: var(--background-three);
+	text-align: center;
+	padding: 25px 0px;
+	margin-bottom: 30px;
+}
 .reasons-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -300,6 +308,28 @@ header {
 /* section 4=team */
 
 /* outline- sec 3 css */
+.team-links-list {
+	display: flex;
+	justify-content: center;
+}
+.team-icon {
+	/* fill: currentColor; */
+}
+.link-icon-team:hover {
+	background-color: var(--company-color);
+	fill: var(--background-main);
+}
+.link-icon-team {
+	display: block;
+	width: 44px;
+	height: 44px;
+	fill: var(--secondary-text);
+	padding: 12px 0px;
+	border-radius: 50%;
+}
+.team-limks-item:not(:last-child) {
+	margin-right: 10px;
+}
 
 .team-list {
 	display:flex
@@ -330,6 +360,7 @@ header {
 .team-text {
 	font-size: 16px;
 	line-height: 1.17;
+	margin-bottom: 16px;
 }
 .team-name {
 	margin-bottom: 10px;
@@ -339,8 +370,29 @@ header {
 .team-text {
 	color: var(--secondary-text);
 }
-
-
+/* section 5 clients */
+.clients-list {
+	display: flex;
+	justify-content: center;
+}
+.clients-link:hover,
+.clients-link:focus {
+	border: 1px solid var(--company-color);
+	fill: var(--company-color);
+}
+.clients-link {
+	display: flex;
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--clients-logo);
+	fill: var(--clients-logo);
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
+.clients-item:not(:last-child) {
+	margin-right: 30px;
+}
 /* portfolio-html */
 .filter-list {
 	display: flex;

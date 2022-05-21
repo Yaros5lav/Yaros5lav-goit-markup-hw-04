@@ -20,6 +20,7 @@
 	--button-hover: #188CE8 ;
 	--projects-border: #EEEEEE;
 	--clients-logo: #AFB1B8;
+	--footer-links-bcgd: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -179,6 +180,49 @@ header {
 	background-color: var(--background-secondary);
 }
 
+.foot-cont {
+	display: flex;
+}
+.flex-element:nth-child(1) {
+	margin-right: 70px;
+}
+.flex-element.join {
+	padding: 12px 0px;
+}
+.join-list {
+	display: flex;
+	justify-content: center;
+}
+
+.team-icon {
+	/* fill: currentColor; */
+}
+
+.join-link:hover,
+.join-link:focus {
+	background-color: var(--company-color);
+}
+.join-text {
+	color: var(--background-main);
+	font-style:normal;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.join-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	fill: var(--background-main);
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--footer-links-bcgd);
+}
+
+.join-item:not(:last-child) {
+	margin-right: 10px;
+}
 /* index html main */
 /* section 1=hero */
 .hero {
@@ -222,7 +266,8 @@ header {
 	font-weight: 700;
 	line-height: 1.875;
 }
-.hero-button:hover {
+.hero-button:hover ,
+.hero-button:focus {
 	background-color: var(--button-hover);
 }
 
@@ -315,7 +360,8 @@ header {
 .team-icon {
 	/* fill: currentColor; */
 }
-.link-icon-team:hover {
+.link-icon-team:hover ,
+.link-icon-team:focus {
 	background-color: var(--company-color);
 	fill: var(--background-main);
 }
@@ -436,6 +482,7 @@ header {
 .filter:hover,
 .filter:focus,
 .filter.active {
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	background-color: var(--company-color);
 	color: var(--background-main);
 }
@@ -473,4 +520,8 @@ header {
 	
 	padding: 20px; 
 	padding-left: 24px;
+}
+.projects-item:hover ,
+.projects-item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

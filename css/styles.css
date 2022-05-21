@@ -95,6 +95,13 @@ p {
 	color: var(--background-main);
 }
 /* header (can use tag for header , but better with class) */
+.contact-link-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+/* .contact-link-icon:hover {
+	fill: var(--company-color);
+} */
 .container {
 	margin-right: auto;
 	margin-left: auto;
@@ -142,10 +149,10 @@ p {
 	color: inherit;
 }
 .contact-link {
-	display: block;
+	align-items: center;
+	display: flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
-
 	color: var(--secondary-text);
 }
 header {
@@ -174,11 +181,19 @@ header {
 /* index html main */
 /* section 1=hero */
 .hero {
-	padding: 200px 0px;
+
 }
 .hero {
-	background-color: var(--background-secondary);
+	background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url(../images/bigimage.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1600px;
+	height: 600px;
+	/* background-color: var(--background-secondary); */
 	text-align: center;
+	padding: 200px 0px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .hero-title {
 	margin-left: auto;

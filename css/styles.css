@@ -373,7 +373,7 @@ header {
 	display: block;
 	width: 44px;
 	height: 44px;
-	fill: var(--secondary-text);
+	fill: var(--clients-logo);
 	padding: 12px 0px;
 	border-radius: 50%;
 }

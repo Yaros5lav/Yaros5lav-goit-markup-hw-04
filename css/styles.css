@@ -188,13 +188,12 @@ header {
 
 .foot-cont {
 	display: flex;
+	align-items: baseline;
 }
 .flex-element:nth-child(1) {
 	margin-right: 70px;
 }
-.flex-element.join {
-	padding: 12px 0px;
-}
+
 .join-list {
 	display: flex;
 	justify-content: center;
@@ -280,8 +279,11 @@ header {
 	width: 270px;
 	height: 120px;
 	background-color: var(--background-three);
-	text-align: center;
-	padding: 25px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* text-align: center;
+	padding: 25px 0px; */
 	margin-bottom: 30px;
 }
 .reasons-list {
@@ -370,12 +372,14 @@ header {
 	fill: var(--background-main);
 }
 .link-icon-team {
-	display: block;
+	display: flex;
 	width: 44px;
 	height: 44px;
 	fill: var(--clients-logo);
-	padding: 12px 0px;
+	/* padding: 12px 0px; */
 	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
 }
 .team-limks-item:not(:last-child) {
 	margin-right: 10px;
@@ -523,7 +527,10 @@ header {
 	
 	padding: 20px 24px; 
 }
-.projects-item:hover ,
-.projects-item:focus {
+.portfolio-link:hover ,
+.portfolio-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link {
+	display: block;
 }
